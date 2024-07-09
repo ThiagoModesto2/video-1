@@ -41,4 +41,7 @@ window.onload = function () {
       links[i].href = href;
     }
   }
+
+  // Esconder o indicador de carregamento
+  document.getElementById("loading-overlay").style.display = "none";
 };
